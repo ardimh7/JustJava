@@ -23,9 +23,9 @@
             android:layout_height="wrap_content"
             android:text="0"/>
     <Button
+            android:id="@+id/order_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:onClick="displayOrder"
             android:text="Make new order"/>
 </LinearLayout>
