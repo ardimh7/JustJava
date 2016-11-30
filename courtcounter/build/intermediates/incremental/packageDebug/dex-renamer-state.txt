@@ -1,0 +1,7 @@
+#Wed Nov 30 14:45:14 WIB 2016
+base.0=/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_111261eab5ac80ca0f1ed92a0f4aea6626154469
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f269ccb4742a341ac6471cc6840b7a04d45b361f/classes.dex
+base.1=/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f269ccb4742a341ac6471cc6840b7a04d45b361f
+file.0=/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_111261eab5ac80ca0f1ed92a0f4aea6626154469/classes.dex

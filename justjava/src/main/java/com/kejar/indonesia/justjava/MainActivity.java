@@ -49,10 +49,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         priceView.setText(String.format(getString(R.string.price_format), price));
     }
 
+    private int calculatePrice(int quantity) {
+        return quantity * 5;
+    }
+
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.order_button) {
-            updatePrice(quantity * 5);
+            updatePrice(calculatePrice(quantity));
         }
     }
 }

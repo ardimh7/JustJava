@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="25982024456194"
+    token="1809457255355543975"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+        type="RESOURCES" />
+
+    <build
+        timestamp="25046368496388"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/outputs/apk/courtcounter-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="25886891118924"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="25982024456194"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/fajarpurwonugroho/GitHub/HelloWord/courtcounter/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+
+</instant-run>
