@@ -36,17 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-
     }
 
     private void updateQty(int qty) {
         TextView qtyView = (TextView) findViewById(R.id.quantity_text_view);
         qtyView.setText(String.valueOf(qty));
-    }
-
-    private void updatePrice(int price) {
-        TextView priceView = (TextView) findViewById(R.id.price_text_view);
-        priceView.setText(String.format(getString(R.string.price_format), price));
     }
 
     private int calculatePrice(int quantity) {
@@ -62,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void createOrderSummary(int price, int quantity) {
-        TextView priceView = (TextView) findViewById(R.id.price_text_view);
-        priceView.setText(getString(R.string.order_summary, quantity, price));
+        TextView orderSummaryView = (TextView) findViewById(R.id.order_summary_text_view);
+        orderSummaryView.setText(getString(R.string.order_summary, quantity, price));
     }
 }
