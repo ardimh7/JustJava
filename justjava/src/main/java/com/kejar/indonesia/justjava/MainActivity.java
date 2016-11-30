@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private int quantity = 2;
+    private int quantity = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        initDefaultValue();
-    }
 
-    private void initDefaultValue() {
-        updateQty(quantity);
-        updatePrice(quantity * 5);
     }
 
     private void updateQty(int qty) {
