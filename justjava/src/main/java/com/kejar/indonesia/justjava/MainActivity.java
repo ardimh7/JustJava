@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        int numberOfCoffees = 2;
+        int quantity = 2;
 
-        updateQty(numberOfCoffees);
-        updatePrice(numberOfCoffees * 5);
+        updateQty(quantity);
+        updatePrice(quantity * 5);
     }
 }
