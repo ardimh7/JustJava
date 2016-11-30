@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private int quantity = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         incrementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int quantity = 3;
+                quantity = quantity + 1;
                 updateQty(quantity);
             }
         });
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         decrementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int quantity = 1;
+                quantity = quantity - 1;
                 updateQty(quantity);
             }
         });
@@ -38,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initDefaultValue() {
-        int quantity = 2;
         updateQty(quantity);
         updatePrice(quantity * 5);
     }
@@ -56,8 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.order_button) {
-            int quantity = 5;
-            updateQty(quantity);
             updatePrice(quantity * 5);
         }
     }
