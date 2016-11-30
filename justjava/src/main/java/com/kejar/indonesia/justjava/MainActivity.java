@@ -56,7 +56,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.order_button) {
-            updatePrice(calculatePrice(quantity));
+            int price = calculatePrice(quantity);
+            createOrderSummary(price, quantity);
         }
+    }
+
+    private void createOrderSummary(int price, int quantity) {
+        TextView priceView = (TextView) findViewById(R.id.price_text_view);
+        priceView.setText(getString(R.string.order_summary, quantity, price));
     }
 }
