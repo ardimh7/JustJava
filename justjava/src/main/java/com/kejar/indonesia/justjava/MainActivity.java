@@ -17,13 +17,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button.setOnClickListener(this);
     }
 
-    private void updateQty(int order) {
+    private void updateQty(int qty) {
         TextView qtyView = (TextView) findViewById(R.id.quantity_text_view);
-        qtyView.setText(String.valueOf(order));
+        qtyView.setText(String.valueOf(qty));
+    }
+
+    private void updatePrice(int price) {
+        TextView priceView = (TextView) findViewById(R.id.price_text_view);
+        priceView.setText(String.format(getString(R.string.price_format), price));
     }
 
     @Override
     public void onClick(View view) {
-        updateQty(1);
+        updateQty(2);
+        updatePrice(2 * 10);
     }
 }
