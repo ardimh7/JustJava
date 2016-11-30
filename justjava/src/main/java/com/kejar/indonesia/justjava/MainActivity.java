@@ -13,8 +13,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = (Button) findViewById(R.id.order_button);
-        button.setOnClickListener(this);
+        Button orderButton = (Button) findViewById(R.id.order_button);
+        orderButton.setOnClickListener(this);
+
+        Button incrementButton = (Button) findViewById(R.id.increment_button);
+        incrementButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int quantity = 3;
+                updateQty(quantity);
+            }
+        });
+
+        Button decrementButton = (Button) findViewById(R.id.decrement_button);
+        decrementButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int quantity = 1;
+                updateQty(quantity);
+            }
+        });
+
+        initDefaultValue();
+    }
+
+    private void initDefaultValue() {
+        int quantity = 2;
+        updateQty(quantity);
+        updatePrice(quantity * 5);
     }
 
     private void updateQty(int qty) {
@@ -29,9 +55,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        int quantity = 2;
-
-        updateQty(quantity);
-        updatePrice(quantity * 5);
+        if (view.getId() == R.id.order_button) {
+            int quantity = 5;
+            updateQty(quantity);
+            updatePrice(quantity * 5);
+        }
     }
 }

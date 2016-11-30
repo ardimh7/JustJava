@@ -18,12 +18,25 @@
             android:layout_marginBottom="16dp"
             android:textAllCaps="true"
             android:text="Quantity:"/>
+
+    <Button
+            android:id="@+id/increment_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"/>
+
     <TextView
             android:id="@+id/quantity_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:text="0"/>
+
+    <Button
+            android:id="@+id/decrement_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:text="-"/>
 
     <TextView
             android:layout_width="wrap_content"
