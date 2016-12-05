@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Just Java</string>
     <string name="price_format">Total : $%d\nThank you.</string>
-    <string name="order_summary" formatted="false">Name: Kapten Kunal\nQuantity: %d\nTotal: $%d\nThank you!</string>
+    <string name="order_summary" formatted="false">
+        Name: %s\n
+        Using Cream ? %s\n
+        Quantity: %d\n
+        Total: $%d\n
+        Thank you!</string>
 </resources>
